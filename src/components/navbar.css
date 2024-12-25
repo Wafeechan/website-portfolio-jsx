@@ -1,0 +1,21 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.logo-container {
+    @apply relative ml-[40px] w-[48px] h-[48px] lg:w-[80px] lg:h-[80px];
+}
+
+.logo {
+    @apply w-full h-full transition-all duration-300;
+    background-image: url('/public/assets/logo_main_color.png');
+    background-size: cover;
+    background-position: center;
+}
+  
+.logo:hover {
+    background-image: url('/public/assets/logo_main_color.png'); /* Hover image */
+}
+  
