@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'
+import './navbar.css'
 
-function navbar(){
+function Navbar(){
 
 return(
     <body className='w-full text-white font-serif'>
@@ -12,7 +12,7 @@ return(
                     <div className='flex items-center logo-container'>
                         <div className="logo"></div>
                     </div>
-                    <div className="flex items-center justify-end text-blue-gray-900">
+                    <div className="flex items-center justify-end">
                         <ul className='flex space-x-4 my-2 lg:my-4'>
                             <li className=' navBtn'>
                                 <Link to="/" className='nav-link navHover text-3xl'>Home</Link>
@@ -34,4 +34,4 @@ return(
 
 }
 
-export default navbar
+export default Navbar

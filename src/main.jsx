@@ -11,7 +11,7 @@ import './index.css';
 
 function Main() {
   return (
-  <Router>
+  <Router basename='web-portfolio'>
     <Navbar />
 
     <Routes>
