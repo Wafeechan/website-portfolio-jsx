@@ -10,12 +10,12 @@
 
 .logo {
     @apply w-full h-full transition-all duration-300;
-    background-image: url('/public/assets/logo_main_color.png');
+    background-image: url('/assets/logo_main_color.png');
     background-size: cover;
     background-position: center;
 }
   
 .logo:hover {
-    background-image: url('/public/assets/logo_main_color.png'); /* Hover image */
+    background-image: url('/assets/logo_main_color.png'); /* Hover image */
 }
   

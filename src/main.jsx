@@ -1,24 +1,24 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//import Home from './Home.jsx';
-//import Portfolio from './Portfolio.jsx';
-//import About from './About.jsx';
-import Navbar from '/src/components/navbar.jsx';
+import Home from './webpages/Home.jsx';
+import Portfolio from './webpages/Portfolio.jsx';
+import About from './webpages/About.jsx';
+import Navbar from './components/navbar.jsx';
 import './index.css';
 
 
 
 function Main() {
   return (
-  <Router basename="/wafi-portfolio">
+  <Router>
     <Navbar />
 
-    {/* <Routes>
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
-    </Routes> */}
+    </Routes>
   </Router>
   )
 }
