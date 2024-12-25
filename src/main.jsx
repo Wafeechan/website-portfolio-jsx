@@ -13,13 +13,15 @@ function Main() {
   return (
   <Router basename='web-portfolio'>
     <Navbar />
-
+    
+    <div className='bg-blue-500'></div>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
     </Routes>
   </Router>
+  
   )
 }
 
