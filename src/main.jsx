@@ -14,7 +14,7 @@ function Main() {
   <Router basename='web-portfolio'>
     <Navbar />
     
-    <div className='bg-blue-500'></div>
+    <div className='bg-blue-500 text-white p-4'>Tailwind is working</div>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<Portfolio />} />
