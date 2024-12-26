@@ -6,6 +6,7 @@ import Portfolio from './webpages/Portfolio.jsx';
 import About from './webpages/About.jsx';
 import Navbar from './components/navbar.jsx';
 import './index.css';
+import Bottombar from './components/bottombar.jsx';
 
 
 
@@ -19,6 +20,8 @@ function Main() {
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
     </Routes>
+
+    <Bottombar />
   </Router>
 
   )
