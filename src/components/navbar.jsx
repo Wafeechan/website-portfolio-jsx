@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
+import LogoMain from '/assets/logo_main_color.png'
 
 function Navbar(){
 
@@ -11,7 +12,7 @@ return(
                     <div className='container mx-auto flex items-center justify-between px-4 py-3'>
                         {/* Logo */}
                         <div className='flex items-center'>
-                            <img src="/assets/logo_main_color.png" alt="Logo" className='h-10 w-10'/>
+                            <img src={LogoMain} alt="Logo" className='h-10 w-10'/> {/* src doesn't work properly, relies on import */}
                         </div>
 
                         {/* Navigation Links */}
