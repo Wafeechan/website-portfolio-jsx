@@ -6,16 +6,23 @@ function Home(){
     return(
         <>
         <body className="text-black bg-blue-400">
-            <div className="grid grid-cols-[4fr,5fr] gap-4 h-screen relative">
-                <div className="relative h-full">
-                    <img src={AW} alt="" className='absolute bottom-0 mb-[70px] left-0 ml-[50px] w-full max-h-[600px] object-contain'/>
+            <div className="grid grid-rows-2 md:grid-cols-[4fr,5fr] md:grid-rows-1 gap-4 h-screen relative">
+                <div className="hidden md:block relative h-full">
+                    <img src={AW} alt="" className='absolute bottom-0 mb-[70px] md:left-0 ml-[50px] w-full h-[300px] md:max-h-[600px] object-contain'/>
                 </div>
                 <div className="">
-                    <div className="bg-white w-full h-full max-w-[600px] max-h-[400px] mx-auto my-[200px] rounded-2xl text-center">
-                        <p className="home-text">Hello, I am</p>
-                        <p>Abdul Wafi,</p>
-                        <p>a programmer.</p>
+                    <div className="bg-white w-[300px] h-[190px] md:w-[600px] md:h-[380px] mx-auto px-auto my-[200px] rounded-2xl flex overflow-hidden">
+                        <div className="m-auto">
+                            <p className="home-text">Hello, I am</p>
+                            <p className="home-text">Abdul Wafi,</p>
+                            <p className="home-text text-blue-300">a programmer.</p>
+                        </div>
                     </div>
+
+                </div>
+
+                <div className="block md:hidden relative h-full">
+                    <img src={AW} alt="" className='absolute bottom-0 mb-[70px] md:left-0 ml-[50px] w-full h-[300px] md:max-h-[600px] object-contain'/>
                 </div>
 
             </div>

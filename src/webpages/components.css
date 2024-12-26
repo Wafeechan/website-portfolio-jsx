@@ -1,0 +1,4 @@
+
+.home-text{
+    @apply font-Inter font-semibold text-[36px] md:text-[72px];
+}
