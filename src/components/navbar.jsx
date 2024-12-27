@@ -14,7 +14,8 @@ return(
                         {/* Logo */}
                         <div className='flex items-center'>
                             <img src={LogoMain} alt="Logo" className='h-16 md:h-24 w-full my-2'/> {/* src doesn't work properly, relies on import */}
-                            <div className='font-SairaItalic text-3xl font-semibold'>Wafeechan</div>
+                            <div className='logo-text text-logoBlue'>Wafee</div>
+                            <div className='logo-text'>chan</div>
                         </div>
 
                         {/* Navigation Links */}

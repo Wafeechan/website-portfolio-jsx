@@ -9,8 +9,11 @@ export default {
       fontFamily: {
         Inter: ['Inter', 'sans-serif'],
         Saira: ['Saira', 'sans-serif'],
-        SairaItalic: ['Saira-Italic', 'sans-serif'],
+        SairaItalic: ['SairaItalic', 'sans-serif'],
       },
+      colors: {
+        logoBlue: '#3898F8',
+      }
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],

@@ -2,3 +2,7 @@
 .home-text{
     @apply font-Inter font-semibold text-[48px] md:text-[72px];
 }
+
+.logo-text{
+    @apply font-SairaItalic text-4xl font-semibold italic
+}
