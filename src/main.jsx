@@ -12,7 +12,7 @@ import Bottombar from './components/bottombar.jsx';
 
 function Main() {
   return (
-  <Router basename='web-portfolio'>
+  <Router basename='website-portfolio-jsx'>
     <Navbar />
     
     <Routes>

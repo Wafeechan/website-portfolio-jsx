@@ -12,7 +12,7 @@ function ImageSlider({ images }) {
   };
 
   return (
-    <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden bg-gray-200">
+    <div className="relative object-contain overflow-hidden bg-gray-200">
       {/* Image */}
       <img
         src={images[currentIndex]}
