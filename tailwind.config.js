@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         Inter: ['Inter', 'sans-serif'],
+        Saira: ['Saira', 'sans-serif'],
+        SairaItalic: ['Saira-Italic', 'sans-serif'],
       },
     },
   },

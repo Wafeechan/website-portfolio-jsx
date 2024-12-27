@@ -13,11 +13,12 @@ return(
                     <div className='container mx-auto flex items-center justify-between px-4 my-auto'>
                         {/* Logo */}
                         <div className='flex items-center'>
-                            <img src={LogoMain} alt="Logo" className='h-24 w-full my-2'/> {/* src doesn't work properly, relies on import */}
+                            <img src={LogoMain} alt="Logo" className='h-16 md:h-24 w-full my-2'/> {/* src doesn't work properly, relies on import */}
+                            <div className='font-SairaItalic text-3xl font-semibold'>Wafeechan</div>
                         </div>
 
                         {/* Navigation Links */}
-                        <ul className='flex space-x-12 text-3xl'>
+                        <ul className='flex space-x-12 text-2xl md:text-3xl'>
                             <li>
                                 <Link to="/" className='nav-link'>Home</Link>
                             </li>

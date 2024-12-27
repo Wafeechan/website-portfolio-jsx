@@ -7,14 +7,12 @@
 @font-face {
     font-family: 'Inter-Italic';
     src: url('/src/assets/fonts/Inter-Italic-VariableFont_opsz,wght') format('truetype');
-    font-weight: 400; /* Normal weight */
     font-style: italic;
   }
   
   @font-face {
     font-family: 'Inter';
     src: url('/src/assets/fonts/Inter-VariableFont_opsz,wght') format('truetype');
-    font-weight: 400;
     font-style: normal;
   }
 
@@ -22,6 +20,18 @@
     font-family: 'Inter-thin';
     src: url('/src/assets/fonts/Inter-VariableFont_opsz,wght') format('truetype');
     font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'SairaItalic';
+    src: url('/src/assets/fonts/Saira-Italic-VariableFont_wdth,wght') format('truetype');
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Saira';
+    src: url('/src/assets/fonts/Saira-VariableFont_wdth,wght') format('truetype');
     font-style: normal;
   }
 
