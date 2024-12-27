@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ImageSlider({ images }) {
+function ImageSlider({ images, width, height }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -12,7 +12,10 @@ function ImageSlider({ images }) {
   };
 
   return (
-    <div className="relative object-contain overflow-hidden bg-gray-200">
+    <div 
+        className="relative object-contain my-auto overflow-hidden bg-gray-200"
+        style={{width, height}}
+    >
       {/* Image */}
       <img
         src={images[currentIndex]}
