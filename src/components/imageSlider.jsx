@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 
-function ImageSlider({ images, width, height }) {
+function ImageSlider({ images, width, height, onSlideChange }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const handleNext = () => {
+    const newIndex = (currentIndex + 1) % images.length;
+    setCurrentIndex(newIndex);
+    if (onSlideChange) onSlideChange(newIndex);
   };
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  const handlePrev = () => {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    setCurrentIndex(newIndex);
+    if (onSlideChange) onSlideChange(newIndex);
   };
 
   return (
@@ -19,13 +23,13 @@ function ImageSlider({ images, width, height }) {
       {/* Image */}
       <img
         src={images[currentIndex]}
-        alt={`Slide ${currentIndex}`}
+        alt={`Slide ${currentIndex + 1}`}
         className="w-full h-full object-cover transition-transform duration-500"
       />
 
       {/* Previous Button */}
       <button
-        onClick={prevSlide}
+        onClick={handlePrev}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
       >
         ❮
@@ -33,7 +37,7 @@ function ImageSlider({ images, width, height }) {
 
       {/* Next Button */}
       <button
-        onClick={nextSlide}
+        onClick={handleNext}
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
       >
         ❯
