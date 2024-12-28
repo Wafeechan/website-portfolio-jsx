@@ -7,7 +7,7 @@ import LogoMain from '/assets/logo_main_color.png';
 function Navbar(){
 
 return(
-    <body className='w-full text-gray-700 font-Inter'>
+    <div className='w-full text-gray-700 font-Inter'>
             <div className='m-0'> 
                 <nav className="fixed top-0 left-0 z-10 w-full bg-white shadow-md">
                     <div className='w-full md:w-[95%] mx-auto flex items-center justify-between px-4 my-auto'>
@@ -35,7 +35,7 @@ return(
                 </nav>
                 
             </div>
-        </body>
+        </div>
         
 )
 

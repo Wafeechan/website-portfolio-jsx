@@ -24,7 +24,7 @@ function Portfolio() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <body className="bg-blue-400 h-screen">
+    <div className="bg-blue-400 h-screen">
       <div className="pt-[120px] md:pt-[150px] items-center relative">
         {/* Title */}
         <div className="font-Inter text-4xl md:text-5xl text-center mb-[20px] text-white font-bold">Portfolio</div>
@@ -60,7 +60,7 @@ function Portfolio() {
         title={titles[currentImageIndex]}
         text={texts[currentImageIndex]}
       />
-    </body>
+    </div>
   );
 }
 

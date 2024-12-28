@@ -5,7 +5,7 @@ function Home(){
 
     return(
         <>
-        <body className="text-black bg-blue-400">
+        <div className="text-black bg-blue-400">
             <div className="grid grid-rows-2 md:grid-cols-[4fr,5fr] md:grid-rows-1 gap-4 h-screen relative">
                 <div className="hidden md:block relative h-full">
                     <img src={AW} alt="" className='absolute bottom-0 mb-[70px] md:left-0 ml-[50px] w-full max-h-[300px] md:max-h-[600px] object-contain'/>
@@ -26,7 +26,7 @@ function Home(){
                 </div>
 
             </div>
-        </body>
+        </div>
 
         </>
     )
