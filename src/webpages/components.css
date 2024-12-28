@@ -8,5 +8,13 @@
 }
 
 .book-button{
-    @apply bg-blue-800 w-[220px] h-[300px] m-auto mb-[100px]
+    @apply bg-blue-800 border-white border md:w-[220px] md:h-[300px] w-[120px] h-[180px]
+}
+
+.book-left{
+    @apply mr-[30px] ml-auto
+}
+
+.book-right{
+    @apply ml-[30px] mr-auto
 }
