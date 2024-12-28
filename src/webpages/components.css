@@ -6,3 +6,7 @@
 .logo-text{
     @apply font-SairaItalic text-4xl font-semibold italic
 }
+
+.book-button{
+    @apply bg-blue-800 w-[220px] h-[300px] m-auto mb-[100px]
+}
