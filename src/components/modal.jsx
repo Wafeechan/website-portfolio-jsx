@@ -9,7 +9,7 @@ function Modal({ isOpen, onClose, image, title, text }) {
                 <button
                     onClick={onClose}
                     className='absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-2xl font-bold'
-                >&times</button>
+                >X</button>
 
                 {/* Modal content */}
                 <img src={image} alt="Modal Content" className='w-full h-[200px] object-cover rounded-md' />

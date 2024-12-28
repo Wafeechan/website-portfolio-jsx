@@ -20,7 +20,7 @@ function Portfolio() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsOpenModal(true);
+  const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   return (
@@ -40,10 +40,10 @@ function Portfolio() {
             {/* Image Slider */}
             <div className="relative mt-[10px] md:w-[800px] md:h-[450px] w-[500px] h-[280px] object-contain z-10">
                 {/* Modal trigger */}
-                <div 
+                <button 
                   onClick={openModal} 
                   className='absolute rounded-full w-[25px] h-[25px] bg-white z-30 text-xl shadow-md flex items-center justify-center top-[15px] right-[30px]'
-                >+</div>
+                >+</button>
 
                 <ImageSlider images={images} width="100%" height="100%" onSlideChange={(index) => setCurrentImageIndex(index)}/>
                 <div className='absolute md:w-[150px] md:h-[40px] w-[100px] h-[30px] text-center z-30 bg-teal-400 right-[30px] bottom-[-20px] shadow-lg flex items-center justify-center md:text-md text-sm'>{`${currentImageIndex + 1}/${images.length}`}</div>
