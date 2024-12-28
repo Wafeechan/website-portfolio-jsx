@@ -17,13 +17,6 @@
   }
 
   @font-face {
-    font-family: 'Inter-thin';
-    src: url('/src/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  @font-face {
     font-family: 'SairaItalic';
     src: url('/src/assets/fonts/Saira-Italic-VariableFont_wdth,wght.ttf') format('truetype');
     font-style: italic;
