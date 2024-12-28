@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutInfo from './About-info.jsx';
 
 import ID from '/assets/customID.png';
 import LogoBlue from '/assets/logo_blue2.png';
@@ -7,7 +8,10 @@ function About(){
 
     return(
         <>
-
+        <Routes>
+            <Route path="/about-info" element={<AboutInfo />} />
+        </Routes>
+        
         <body className='bg-blue-400 h-screen pb-[100px]'>
             <div className='grid md:grid-rows-2 grid-rows-[1fr, 2fr] h-full'>
                 <div className='md:w-[400px] w-[350px] h-auto m-auto md:pt-[140px] pt-[80px]'>
