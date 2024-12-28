@@ -34,3 +34,7 @@
 .book-group-hover{
     @apply  group-hover:text-blue-800 transition duration-200 ease-in-out
 }
+
+.logo-book{
+    @apply top-[22%] left-1/2 -translate-x-1/2 -translate-y-1/4 w-[80px] h-auto
+}
