@@ -46,7 +46,7 @@ function Portfolio() {
                 >+</button>
 
                 <ImageSlider images={images} width="100%" height="100%" onSlideChange={(index) => setCurrentImageIndex(index)}/>
-                <div className='absolute md:w-[150px] md:h-[40px] w-[100px] h-[30px] text-center z-30 bg-teal-400 right-[30px] bottom-[-20px] shadow-lg flex items-center justify-center md:text-md text-sm'>{`${currentImageIndex + 1}/${images.length}`}</div>
+                <div className='absolute md:w-[150px] md:h-[40px] w-[100px] h-[30px] text-center z-30 bg-cyan-300 right-[30px] bottom-[-20px] shadow-lg flex items-center justify-center md:text-md text-sm'>{`${currentImageIndex + 1}/${images.length}`}</div>
             </div>
 
           
