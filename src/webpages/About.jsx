@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ID from '/assets/customID.png';
 import LogoBlue from '/assets/logo_blue2.png';
@@ -21,24 +22,24 @@ function About(){
                         <div></div>
                         <div className='book-text book-group-hover'>Education</div>
                     </Link>
-                    <div className='relative book-button book-right grid grid-rows-2 book-hover group'>
+                    <Link to='/about-info' className='relative book-button book-right grid grid-rows-2 book-hover group'>
                         <div className='top-half-book'></div>
                         <div className='absolute translate logo-book z-10'><img src={LogoBlue} alt="" /></div>
                         <div></div>
                         <div className='book-text book-group-hover'>Experience</div>
-                    </div>
-                    <div className='relative book-button book-left grid grid-rows-2 book-hover group'>
+                    </Link>
+                    <Link to='/about-info' className='relative book-button book-left grid grid-rows-2 book-hover group'>
                         <div className='top-half-book'></div>
                         <div className='absolute translate logo-book z-10'><img src={LogoBlue} alt="" /></div>
                         <div></div>
                         <div className='book-text book-group-hover'>Achievement</div>
-                    </div>
-                    <div className='relative book-button book-right grid grid-rows-2 book-hover group'>
+                    </Link>
+                    <Link to='/about-info' className='relative book-button book-right grid grid-rows-2 book-hover group'>
                         <div className='top-half-book'></div>
                         <div className='absolute translate logo-book z-10'><img src={LogoBlue} alt="" /></div>
                         <div></div>
                         <div className='book-text book-group-hover'>Skills</div>
-                    </div>
+                    </Link>
                 </div>
 
             </div>
