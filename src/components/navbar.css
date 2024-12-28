@@ -4,8 +4,6 @@
 
 @tailwind utilities;
 
-
-
 .nav-link {
     position: relative;
     display: inline-block;
@@ -32,6 +30,10 @@
   .nav-link:hover::after {
     width: 100%;
   }
+
+  .logo-text{
+    @apply font-SairaItalic md:text-4xl text-2xl font-semibold italic
+}
   
 
 

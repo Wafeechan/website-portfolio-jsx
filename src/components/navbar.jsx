@@ -10,7 +10,7 @@ return(
     <body className='w-full text-gray-700 font-Inter'>
             <div className='m-0'> 
                 <nav className="fixed top-0 left-0 z-10 w-full bg-white shadow-md">
-                    <div className='container mx-auto flex items-center justify-between px-4 my-auto'>
+                    <div className='w-full md:w-[95%] mx-auto flex items-center justify-between px-4 my-auto'>
                         {/* Logo */}
                         <div className='flex items-center'>
                             <img src={LogoMain} alt="Logo" className='h-16 md:h-24 w-full my-2'/> {/* src doesn't work properly, relies on import */}
