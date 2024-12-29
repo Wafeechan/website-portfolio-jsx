@@ -42,10 +42,12 @@ function Portfolio() {
                 {/* Modal trigger */}
                 <button 
                   onClick={openModal} 
-                  className='absolute rounded-full w-[25px] h-[25px] bg-white z-30 text-xl shadow-md flex items-center justify-center top-[15px] right-[30px]'
-                >+</button>
+                  className='absolute z-10 items-center justify-center sm:mt-[10px] mt-[5px] md:w-[800px] md:h-[450px] sm:w-[500px] sm:h-[280px] w-[270px] h-[190px] bottom-1 object-contain'
+                >
+                  <ImageSlider images={images} width="100%" height="100%" onSlideChange={(index) => setCurrentImageIndex(index)}/>
+                </button>
 
-                <ImageSlider images={images} width="100%" height="100%" onSlideChange={(index) => setCurrentImageIndex(index)}/>
+                
                 <div className='absolute md:w-[150px] md:h-[40px] sm:w-[100px] sm:h-[30px] w-[75px] h-[25px] text-center z-30 bg-cyan-300 right-[30px] bottom-[-20px] shadow-lg flex items-center justify-center md:text-md sm:text-sm text-xs'>{`${currentImageIndex + 1}/${images.length}`}</div>
             </div>
 
