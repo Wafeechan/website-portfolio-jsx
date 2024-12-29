@@ -1,24 +1,32 @@
 import React, { useState } from 'react';
 
-function ImageSlider({ images, width, height, onSlideChange }) {
+function ImageSlider({ images, width, height, onSlideChange, onImageClick }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = (event) => {
+    event.stopPropagation(); //Prevents modal from opening
     const newIndex = (currentIndex + 1) % images.length;
     setCurrentIndex(newIndex);
     if (onSlideChange) onSlideChange(newIndex);
   };
 
-  const handlePrev = () => {
+  const handlePrev = (event) => {
+    event.stopPropagation(); //Prevents modal from opening
     const newIndex = (currentIndex - 1 + images.length) % images.length;
     setCurrentIndex(newIndex);
     if (onSlideChange) onSlideChange(newIndex);
   };
 
+  const handleDotClick = (event, index) => {
+    event.stopPropagation();
+    setCurrentIndex(index);
+  }
+
   return (
     <div 
         className="relative object-contain my-auto overflow-hidden bg-gray-200"
         style={{width, height}}
+        onClick={() => onImageClick(currentIndex)} //Opens modal on image click
     >
       {/* Image */}
       <img
@@ -48,7 +56,7 @@ function ImageSlider({ images, width, height, onSlideChange }) {
         {images.map((_, idx) => (
           <div
             key={idx}
-            onClick={() => setCurrentIndex(idx)}
+            onClick={(event) => handleDotClick(event, idx)} //Prevents modal from opening
             className={`w-3 h-3 rounded-full cursor-pointer ${
               idx === currentIndex ? 'bg-blue-500' : 'bg-gray-400'
             }`}
