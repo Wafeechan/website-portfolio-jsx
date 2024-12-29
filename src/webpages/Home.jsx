@@ -22,7 +22,7 @@ function Home(){
                 </div>
 
                 <div className="block md:hidden relative h-full">
-                    <img src={AW} alt="" className='absolute bottom-[70px] md:left-0 ml-[50px] w-full max-h-[250px] sm:max-h-[350px] md:max-h-[600px] object-contain'/>
+                    <img src={AW} alt="" className='absolute bottom-[70px] md:left-0 sm:ml-[50px] w-full max-h-[250px] sm:max-h-[350px] md:max-h-[600px] object-contain'/>
                 </div>
 
             </div>
