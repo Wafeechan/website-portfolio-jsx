@@ -1,20 +1,27 @@
 import React, { useEffect } from 'react';
 
+
+
 function Modal({ isOpen, onClose, image, title, text }) {
-  useEffect(() => {
-    // Prevent background scroll when modal is open
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+  if (!isOpen) return null
 
-    return () => {
-      document.body.style.overflow = ''; // Reset on unmount
-    };
-  }, [isOpen]);
+  else{
+    useEffect(() => {
+        // Prevent background scroll when modal is open
+        if (isOpen) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+    
+        return () => {
+          document.body.style.overflow = ''; // Reset on unmount
+        };
+      }, [isOpen]);
+    
+  }
 
-  if (!isOpen) return null;
+//   Best practice to use useEffect like this as the browser will not have to check the dependancies over and over if it's running or not
 
   return (
     <div className="fixed inset-0 bg-gray-900 bg-opacity-60 flex justify-center items-center z-50">
@@ -27,11 +34,11 @@ function Modal({ isOpen, onClose, image, title, text }) {
         </button>
 
         {/* Modal Content */}
-        <img src={image} alt="Modal Content" className="h-[500px] w-full rounded mb-4 shadow-sm object-cover" />
-        <h2 className="text-center text-white text-3xl md:text-4xl font-Inter font-semibold mt-4">
+        <img src={image} alt="Modal Content" className="sm:h-[500px] h-[200px] w-full rounded mb-4 shadow-sm object-cover" />
+        <h2 className="text-center text-white text-2xl sm:text-3xl md:text-4xl font-Inter font-semibold mt-4">
           {title}
         </h2>
-        <p className="text-justify mt-4 text-white font-Inter font-light md:text-base text-sm">
+        <p className="text-justify mt-4 text-white font-Inter font-light md:text-base sm:text-sm text-xs">
           {text}
         </p>
       </div>
