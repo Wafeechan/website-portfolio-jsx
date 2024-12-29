@@ -24,15 +24,15 @@ function Portfolio() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="bg-blue-400 h-screen">
-      <div className="pt-[120px] md:pt-[150px] items-center relative">
+    <div className="bg-blue-400 h-[120vh] w-screen-lg pt-[150px]">
+      <div className=" items-center relative">
         {/* Title */}
         <div className="font-Inter text-4xl md:text-5xl text-center mb-[20px] text-white font-bold">Portfolio</div>
 
         <div className=' mx-auto bg-blue-600 md:w-[850px] md:h-[30px] w-[520px] h-[20px] z-20 relative'/>  
 
         {/* Image Slider with Background */}
-        <div className="relative w-full flex items-center justify-center">
+        <div className="relative w-full flex justify-center pb-[200px]">
 
             {/* Rectangle Background */}
             <div className="absolute top-[0px] bg-white md:w-[830px] md:h-[500px] w-[510px] h-[320px] shadow-lg z-0"></div>
