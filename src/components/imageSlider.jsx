@@ -30,7 +30,7 @@ function ImageSlider({ images, width, height, onSlideChange }) {
       {/* Previous Button */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+        className="absolute top-1/2 sm:left-4 left-0 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full sm:text-base text-xs"
       >
         ❮
       </button>
@@ -38,7 +38,7 @@ function ImageSlider({ images, width, height, onSlideChange }) {
       {/* Next Button */}
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+        className="absolute top-1/2 sm:right-4 right-0 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full sm:text-base text-xs"
       >
         ❯
       </button>
