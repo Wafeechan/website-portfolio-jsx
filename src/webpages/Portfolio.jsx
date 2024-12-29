@@ -44,7 +44,7 @@ function Portfolio() {
                   onClick={openModal} 
                   className='absolute z-10 items-center justify-center sm:mt-[10px] mt-[5px] md:w-[800px] md:h-[450px] sm:w-[500px] sm:h-[280px] w-[270px] h-[190px] bottom-1 object-contain'
                 >
-                  <ImageSlider images={images} width="100%" height="100%" onSlideChange={(index) => setCurrentImageIndex(index)}/>
+                  <ImageSlider images={images} width="100%" height="100%" onSlideChange={(index) => setCurrentImageIndex(index)} onImageClick={(currentIndex) => openModal(currentIndex)}/>
                 </button>
 
                 
