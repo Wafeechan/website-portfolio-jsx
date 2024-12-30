@@ -8,7 +8,11 @@
 }
 
 .book-button{
-    @apply bg-blue-800 shadow-lg w-full aspect-w-2 aspect-h-3 {/*md:w-[220px] md:h-[300px] w-[130px] h-[180px]*/};
+    @apply bg-blue-800 shadow-lg w-full aspect-h-4 aspect-w-3;
+}
+
+.book-space{
+    @apply md:px-[60px] px-[30px];
 }
 
 .book-left{
@@ -24,7 +28,7 @@
 }
 
 .book-text{
-    @apply text-sky-400 font-Inter font-semibold text-center my-auto md:text-2xl;
+    @apply text-sky-400 font-Inter font-semibold text-center my-auto md:text-2xl flex items-end justify-center mb-[50px];
 }
 
 .book-hover{
