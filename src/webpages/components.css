@@ -28,7 +28,7 @@
 }
 
 .book-text{
-    @apply text-sky-400 font-Inter font-semibold text-center my-auto md:text-2xl flex items-end justify-center mb-[50px];
+    @apply text-sky-400 font-Inter font-semibold text-center my-auto sm:text-2xl text-xs flex items-end justify-center sm:mb-[50px] mb-[25px];
 }
 
 .book-hover{
