@@ -9,7 +9,7 @@ function About(){
     return(
         <>
 
-        <div className='bg-blue-400 h-full md:pb-[50px] pb-[300px]'>
+        <div className='bg-blue-400 h-full md:pb-[50px] pb-[200px]'>
             <div className='grid md:grid-rows-[4fr, 3fr] grid-rows-[1fr, 2fr] gap-4 h-screen'>
                 <div className='flex justify-center items-center h-full mt-[120px]'>
                     <div className='w-auto h-full max-w-full max-h-full'>
