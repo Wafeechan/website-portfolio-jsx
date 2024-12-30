@@ -40,5 +40,5 @@
 }
 
 .logo-book{
-    @apply top-[22%] left-1/2 -translate-x-1/2 -translate-y-1/4 sm:w-[80px] w-[50px] h-auto;
+    @apply top-[22%] left-1/2 -translate-x-1/2 -translate-y-1/4 sm:w-[80px] w-[30px] h-auto;
 }
