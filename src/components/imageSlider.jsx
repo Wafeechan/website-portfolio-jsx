@@ -24,7 +24,7 @@ function ImageSlider({ images, width, height, onSlideChange, onImageClick }) {
 
   return (
     <div 
-        className="relative object-contain my-auto overflow-hidden bg-gray-200"
+        className="relative object-contain my-auto overflow-hidden bg-gray-200 cursor-pointer"
         style={{width, height}}
         onClick={() => onImageClick(currentIndex)} //Opens modal on image click
     >
