@@ -16,9 +16,9 @@ function AboutInfo() {
     ];
 
     return (
-        <div className="p-10 bg-blue-400 h-screen">
-            <div className="w-[800px] items-center justify-center">
-            <TabImageSlider images={images} titles={titles} descriptions={descriptions}/>
+        <div className="p-10 bg-blue-400 h-screen flex items-center justify-center">
+            <div className="bg-white w-[1000px]">
+                <TabImageSlider images={images} width="200px" height="250px" titles={titles} descriptions={descriptions}/>
             </div>
 
         </div>
