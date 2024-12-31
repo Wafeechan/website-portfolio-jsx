@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function TabImageSlider({ images, width, height, titles, descriptions }) {
+function TabImageSlider({ images, width, height, titles, details1, details2, details3, descriptions }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -12,10 +12,10 @@ function TabImageSlider({ images, width, height, titles, descriptions }) {
   };
 
   return (
-    <div className="gap-4 w-full h-auto">
-        <div className='grid grid-cols-3'>
+    <div className="gap-4 w-full h-auto pt-10 px-4">
+        <div className='grid grid-cols-[1fr,1fr,2fr]'>
             {/* Top Left Image */}
-            <div className="relative rounded-lg overflow-hidden justify-center items-center" style={{width, height}}>
+            <div className="relative flex overflow-hidden m-auto" style={{width, height}}>
                 <img
                 src={images[currentIndex]}
                 alt={titles[currentIndex]}
@@ -24,16 +24,22 @@ function TabImageSlider({ images, width, height, titles, descriptions }) {
             </div>
 
             {/* Right Side Description */}
-            <div className="grid grid-rows-2">
-                <div className='text-start mt-auto font-Inter font-semibold text-blue-950 text-4xl'>{titles[currentIndex]}</div>
-                <div>Test</div>
+            <div className="grid grid-rows-2 gap-6 text-blue-950">
+                <div className='text-start mt-auto font-Inter font-semibold text-5xl'>{titles[currentIndex]}</div>
+                <div className='grid grid-row-5'>
+                    <div>Position: {details1[currentIndex]}</div>
+                    <div>Location: {details2[currentIndex]}</div>
+                    <div>Period: {details3[currentIndex]}</div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-            <div className="justify-center">{descriptions[currentIndex]}</div>
+            <div className="justify-center py-10 px-6 text-sm">{descriptions[currentIndex]}</div>
         </div>
       
 
       {/* Bottom Navigation */}
-      <div className="col-span-2 flex items-center justify-start mt-4">
+      <div className="col-span-2 flex items-center justify-center mt-[70px]">
         <button
           onClick={handlePrev}
           className="px-2 py-1 bg-gray-300 hover:bg-gray-400 text-sm rounded-l-md"
