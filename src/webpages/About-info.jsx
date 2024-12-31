@@ -1,8 +1,10 @@
+import TabImageSlider from '/src/components/tabImageSlider'
+
 function AboutInfo(){
 
 return(
-    <div>
-        
+    <div className='bg-blue-400 h-screen'>
+        <TabImageSlider />
     </div>
 )
 
