@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function TabImageSlider({ images, titles, descriptions }) {
+function TabImageSlider({ images, width, height, titles, descriptions }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -12,21 +12,25 @@ function TabImageSlider({ images, titles, descriptions }) {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 w-full h-auto">
-      {/* Top Left Image */}
-      <div className="relative bg-gray-200 rounded-lg overflow-hidden">
-        <img
-          src={images[currentIndex]}
-          alt={titles[currentIndex]}
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <div className="gap-4 w-full h-auto">
+        <div className='grid grid-cols-3'>
+            {/* Top Left Image */}
+            <div className="relative rounded-lg overflow-hidden justify-center items-center" style={{width, height}}>
+                <img
+                src={images[currentIndex]}
+                alt={titles[currentIndex]}
+                className="w-full h-full object-cover"
+                />
+            </div>
 
-      {/* Right Side Description */}
-      <div className="flex flex-col justify-center">
-        <h2 className="text-xl font-bold mb-2">{titles[currentIndex]}</h2>
-        <p className="text-gray-700">{descriptions[currentIndex]}</p>
-      </div>
+            {/* Right Side Description */}
+            <div className="grid grid-rows-2">
+                <div className='text-start mt-auto font-Inter font-semibold text-blue-950 text-4xl'>{titles[currentIndex]}</div>
+                <div>Test</div>
+            </div>
+            <div className="justify-center">{descriptions[currentIndex]}</div>
+        </div>
+      
 
       {/* Bottom Navigation */}
       <div className="col-span-2 flex items-center justify-start mt-4">
