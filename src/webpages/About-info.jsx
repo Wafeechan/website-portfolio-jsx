@@ -47,7 +47,7 @@ function AboutInfo() {
 
     return (
         <div className="p-10 bg-blue-400 h-screen sm:h-[120vh] md:h-screen grid grid-rows-[1fr,4fr] gap-10 justify-center">
-            <div className="text-white font-Inter text-5xl font-semibold flex mt-auto mx-auto">About</div>
+            <div className="text-white font-Inter text-3xl sm:text-5xl font-semibold flex mt-auto mx-auto">About</div>
             <div className="hidden md:block bg-white rounded-xl w-[1000px] h-[480px]">
                 <TabImageSlider images={images} width="200px" height="250px" titles={titles} 
                 details1={details1} details2={details2} details3={details3} descriptions={descriptions}/>
