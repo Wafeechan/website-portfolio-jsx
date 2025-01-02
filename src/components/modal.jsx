@@ -34,7 +34,7 @@ function Modal({ isOpen, onClose, image, title, text }) {
         </button>
 
         {/* Modal Content */}
-        <img src={image} alt="Modal Content" className="sm:h-[500px] h-[200px] w-full rounded mb-4 shadow-sm object-cover" />
+        <img src={image} alt="Modal Content" className="sm:h-[500px] h-[200px] w-full rounded mb-4 shadow-sm object-contain" />
         <h2 className="text-center text-white text-2xl sm:text-3xl md:text-4xl font-Inter font-semibold mt-4">
           {title}
         </h2>
