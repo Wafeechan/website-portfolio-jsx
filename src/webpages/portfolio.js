@@ -1,6 +1,6 @@
-import Image1 from '/src/assets/image/placeholder1.jpg';
-import Image2 from '/src/assets/image/placeholder2.jpg';
-import Image3 from '/src/assets/image/placeholder3.png';
+import Image1 from '/assets/Portfolio1.png';
+import Image2 from '/assets/Portfolio2.png';
+import Image3 from '/assets/Portfolio3.png';
 
 
 export const images = [Image1, Image2, Image3];
