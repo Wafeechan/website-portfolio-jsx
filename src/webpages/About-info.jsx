@@ -1,6 +1,6 @@
 import React from "react";
 import TabImageSlider from "/src/components/tabImageSlider.jsx";
-import { images, titles, details1, details2, details3, descriptions } from './data.js'
+import { images, titles, details1, details2, details3, descriptions } from './data'
 
 function AboutInfo() {
     
