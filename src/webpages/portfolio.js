@@ -5,12 +5,18 @@ import Image3 from '/assets/Portfolio3.png';
 
 export const images = [Image1, Image2, Image3];
 
-export const titles = ['Portfolio 1', 'Portfolio 2', 'Portfolio 3'];
+export const titles = [
+    'Investigating Quadrupedal Robotics Learning in a Simulated Environment using Unity ML-Agent', 
+
+    'Narrative Video: Artificial Intelligence (Reinforcement Learning)', 
+
+    'Virtual Reality (VR) Mansion Horror Game',
+];
 
 export const texts = [
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar congue pharetra. Proin quis tortor pellentesque, laoreet risus tempor, fermentum dolor. Fusce nec enim quam. Duis lorem nunc, varius nec consequat nec, ornare non quam. Integer eget metus sit amet mi lobortis facilisis at eu lectus. Ut varius enim non est aliquet auctor. Aenean facilisis risus in laoreet efficitur. Phasellus imperdiet non nisl nec sodales. Nunc eleifend mauris sed nisi congue interdum. Vivamus porttitor eros iaculis velit malesuada, eget consectetur augue rhoncus. Aenean convallis, ante eget pulvinar ornare, nulla nulla egestas nisl, bibendum mattis enim nunc ac ante. Curabitur aliquet auctor leo id accumsan.',
+    'This project explores training a quadrupedal robot using Deep Reinforcement Learning (DRL) in a 3D simulation environment with Unity ML-Agents Toolkit. Leveraging Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, the robot was trained to stand, balance, and move toward targets. Results showed SAC outperformed PPO, offering more efficient training. Joint force data was also analyzed, providing insights valuable for real-world hardware design. This study demonstrates the potential of DRL for developing intelligent, autonomous robotic systems.',
 
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar congue pharetra. Proin quis tortor pellentesque, laoreet risus tempor, fermentum dolor. Fusce nec enim quam. Duis lorem nunc, varius nec consequat nec, ornare non quam. Integer eget metus sit amet mi lobortis facilisis at eu lectus. Ut varius enim non est aliquet auctor. Aenean facilisis risus in laoreet efficitur. Phasellus imperdiet non nisl nec sodales. Nunc eleifend mauris sed nisi congue interdum. Vivamus porttitor eros iaculis velit malesuada, eget consectetur augue rhoncus. Aenean convallis, ante eget pulvinar ornare, nulla nulla egestas nisl, bibendum mattis enim nunc ac ante. Curabitur aliquet auctor leo id accumsan.',
+    'For this project, I created a digital narrative video on Artificial Intelligence, focusing on Reinforcement Learning. This topic aligned with my Final Year Project, making it a meaningful choice. The video was designed for a general audience, prioritizing clarity and accessibility. While maintaining essential information, I emphasized my editing skills, crafting an engaging and visually appealing presentation that simplifies complex concepts for better understanding.',
 
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar congue pharetra. Proin quis tortor pellentesque, laoreet risus tempor, fermentum dolor. Fusce nec enim quam. Duis lorem nunc, varius nec consequat nec, ornare non quam. Integer eget metus sit amet mi lobortis facilisis at eu lectus. Ut varius enim non est aliquet auctor. Aenean facilisis risus in laoreet efficitur. Phasellus imperdiet non nisl nec sodales. Nunc eleifend mauris sed nisi congue interdum. Vivamus porttitor eros iaculis velit malesuada, eget consectetur augue rhoncus. Aenean convallis, ante eget pulvinar ornare, nulla nulla egestas nisl, bibendum mattis enim nunc ac ante. Curabitur aliquet auctor leo id accumsan.',
+    'For this project, I developed a VR horror game set in a mansion, utilizing assets provided by our lecturer. The gameplay is divided into two phases: exploration and escape. In the exploration phase, players search for clues and solve puzzles to progress. Once a critical point is reached, the game shifts into an adrenaline-pumping escape sequence, where players must navigate obstacles to reach the exit. This project highlights my ability to design immersive gameplay mechanics and create engaging player experiences in a VR environment.',
 ];
