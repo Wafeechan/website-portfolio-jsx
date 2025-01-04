@@ -3,6 +3,17 @@ import React, { useState, useEffect } from 'react';
 function TabImageSlider({ images, width, height, titles, details1, details2, details3, descriptions, initialIndex }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
+  const categories = [
+    { range: [0,2], label: 'Education' },
+    { range: [3,5], label: 'Experience' },
+    { range: [6,6], label: 'Achievement' },
+    { range: [7,11], label: 'Skills' },
+  ]
+
+  const currentCategory = categories.find(({ range }) =>
+    currentIndex >= range[0] && currentIndex <= range[1]
+  )?.label;
+
   useEffect(() => {
     setCurrentIndex(initialIndex);
   }, [initialIndex]);
@@ -16,7 +27,8 @@ function TabImageSlider({ images, width, height, titles, details1, details2, det
   };
 
   return (
-    <div className="gap-4 w-full h-auto pt-10 px-4">
+    <div className="gap-4 w-full h-auto pt-4 px-4">
+        <div className="text-center text-2xl font-Inter font-bold underline pb-2">{currentCategory}</div>
         <div className='hidden md:grid grid-cols-[1fr,1fr,2fr]'>
             {/* Top Left Image */}
             <div className="relative flex overflow-hidden mx-auto my-8" style={{width, height}}>

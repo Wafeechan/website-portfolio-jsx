@@ -4,7 +4,7 @@ import Image3 from '/assets/SMSHLogo.jpg';
 import Image4 from '/assets/SVHLogo.jpeg';
 import Image5 from '/assets/OULogo.jpeg';
 import Image6 from '/assets/UGLogo.jpg';
-import Image7 from '/assets/UTBLogo.jpeg';
+import Image7 from '/assets/BCSLogo.svg';
 import Image8 from '/assets/ProgrammerLogo.jpg';
 // import Image9 from '/assets/';
 import Image10 from '/assets/MicrosoftLogo.jpg';
