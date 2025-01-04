@@ -6,13 +6,13 @@ import Image5 from '/assets/OULogo.jpeg';
 import Image6 from '/assets/UGLogo.jpg';
 import Image7 from '/assets/BCSLogo.svg';
 import Image8 from '/assets/ProgrammerLogo.jpg';
-// import Image9 from '/assets/';
+import Image9 from '/assets/GDLogo.avif';
 import Image10 from '/assets/MicrosoftLogo.jpg';
 import Image11 from '/assets/LanguageLogo.jpg';
 import Image12 from '/assets/SkillsLogo.webp';
 
 
-export const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image8, Image10, Image11, Image12];
+export const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12];
 
 export const titles = [
     //Education
