@@ -137,7 +137,7 @@ function TabImageSlider({ images, width, height, titles, details1, details2, det
 
             {/* Right Side Description */}
             <div className="grid grid-rows-2 gap-4 text-blue-950">
-                <div className='text-start mt-auto font-Inter font-semibold text-2xl'>{titles[currentIndex]}</div>
+                <div className='text-start mt-auto font-Inter font-semibold text-md'>{titles[currentIndex]}</div>
                 <div className='grid grid-row-5 text-[9px]'>
                     <div>Position: {details1[currentIndex]}</div>
                     <div>Location: {details2[currentIndex]}</div>
