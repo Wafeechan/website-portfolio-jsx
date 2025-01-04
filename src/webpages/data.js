@@ -1,8 +1,18 @@
-import Image1 from '/src/assets/image/placeholder1.jpg';
-import Image2 from '/src/assets/image/placeholder2.jpg';
-import Image3 from '/src/assets/image/placeholder3.png';
+import Image1 from '/assets/UTBLogo.jpeg';
+import Image2 from '/assets/MDLogo.jpeg';
+import Image3 from '/assets/SMSHLogo.jpg';
+import Image4 from '/assets/SVHLogo.jpeg';
+import Image5 from '/assets/OULogo.jpeg';
+import Image6 from '/assets/UGLogo.jpg';
+import Image7 from '/assets/UTBLogo.jpeg';
+import Image8 from '/assets/ProgrammerLogo.jpg';
+// import Image9 from '/assets/';
+import Image10 from '/assets/MicrosoftLogo.jpg';
+import Image11 from '/assets/LanguageLogo.jpg';
+import Image12 from '/assets/SkillsLogo.webp';
 
-export const images = [Image1, Image2, Image3, Image1, Image2, Image3, Image1, Image2, Image3, Image1, Image2, Image3];
+
+export const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image8, Image10, Image11, Image12];
 
 export const titles = [
     //Education

@@ -19,7 +19,7 @@ function TabImageSlider({ images, width, height, titles, details1, details2, det
                 <img
                 src={images[currentIndex]}
                 alt={titles[currentIndex]}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 />
             </div>
 
@@ -75,7 +75,7 @@ function TabImageSlider({ images, width, height, titles, details1, details2, det
                 <img
                 src={images[currentIndex]}
                 alt={titles[currentIndex]}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 />
             </div>
 
@@ -131,7 +131,7 @@ function TabImageSlider({ images, width, height, titles, details1, details2, det
                 <img
                 src={images[currentIndex]}
                 alt={titles[currentIndex]}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 />
             </div>
 
