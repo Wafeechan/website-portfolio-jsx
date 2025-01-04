@@ -20,7 +20,11 @@ function About(){
 
                 <div className='grid md:grid-cols-4 md:grid-rows-none grid-cols-2 grid-rows-2 md:gap-[100px] gap-[50px]'>
                     <div className='book-space'>
-                        <Link to='/about-info' className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'>
+                        <Link 
+                            to='/about-info' 
+                            state={{ index:0 }} 
+                            className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'
+                        >
                             {/* Centered White Background */}
                             <div className='top-half-book flex items-center justify-center'>
                             <img src={LogoBlue} alt="" className='logo-book absolute' />
@@ -36,7 +40,11 @@ function About(){
                         </Link>
                     </div>
                     <div className='book-space'>
-                        <Link to='/about-info' className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'>
+                        <Link 
+                            to='/about-info' 
+                            state={{ index:3 }}
+                            className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'
+                        >
                             {/* Centered White Background */}
                             <div className='top-half-book flex items-center justify-center'>
                             <img src={LogoBlue} alt="" className='logo-book absolute' />
@@ -52,7 +60,11 @@ function About(){
                         </Link>
                     </div>
                     <div className='book-space'>
-                        <Link to='/about-info' className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'>
+                        <Link 
+                            to='/about-info' 
+                            state={{ index:6 }}
+                            className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'
+                        >
                             {/* Centered White Background */}
                             <div className='top-half-book flex items-center justify-center'>
                             <img src={LogoBlue} alt="" className='logo-book absolute' />
@@ -68,7 +80,11 @@ function About(){
                         </Link>
                     </div>
                     <div className='book-space'>
-                        <Link to='/about-info' className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'>
+                        <Link 
+                            to='/about-info' 
+                            state={{ index:7 }}
+                            className='relative book-button book-left grid grid-rows-[3fr,1fr] book-hover group'
+                        >
                             {/* Centered White Background */}
                             <div className='top-half-book flex items-center justify-center'>
                             <img src={LogoBlue} alt="" className='logo-book absolute' />

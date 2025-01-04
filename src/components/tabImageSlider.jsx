@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function TabImageSlider({ images, width, height, titles, details1, details2, details3, descriptions }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+function TabImageSlider({ images, width, height, titles, details1, details2, details3, descriptions, initialIndex }) {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+  useEffect(() => {
+    setCurrentIndex(initialIndex);
+  }, [initialIndex]);
 
   const handleNext = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
