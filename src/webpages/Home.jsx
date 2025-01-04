@@ -1,4 +1,4 @@
-import AW from '/assets/AW_Image.png'
+import AW from '/assets/AW_Mini.png'
 import "./components.css"
 
 function Home(){
