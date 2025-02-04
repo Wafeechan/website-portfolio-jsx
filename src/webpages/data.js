@@ -1,18 +1,18 @@
-import Image1 from '/assets/UTBLogo.jpeg';
-import Image2 from '/assets/MDLogo.jpeg';
-import Image3 from '/assets/SMSHLogo.jpg';
-import Image4 from '/assets/SVHLogo.jpeg';
-import Image5 from '/assets/OULogo.jpeg';
-import Image6 from '/assets/UGLogo.jpg';
-import Image7 from '/assets/BCSLogo.svg';
-import Image8 from '/assets/ProgrammerLogo.jpg';
-import Image9 from '/assets/GDLogo.avif';
-import Image10 from '/assets/MicrosoftLogo.jpg';
-import Image11 from '/assets/LanguageLogo.jpg';
-import Image12 from '/assets/SkillsLogo.webp';
+import UTB from '/assets/UTBLogo.jpeg';
+import MD from '/assets/MDLogo.jpeg';
+import SMSH from '/assets/SMSHLogo.jpg';
+import SVH from '/assets/SVHLogo.jpeg';
+import OU from '/assets/OULogo.jpeg';
+import UG from '/assets/UGLogo.jpg';
+import BCS from '/assets/BCSLogo.svg';
+import Programmer from '/assets/ProgrammerLogo.jpg';
+import Graphic from '/assets/GDLogo.avif';
+import Microsoft from '/assets/MicrosoftLogo.jpg';
+import Language from '/assets/LanguageLogo.jpg';
+import Skills from '/assets/SkillsLogo.webp';
 
 
-export const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12];
+export const images = [UTB, MD, SMSH, SVH, OU, UG, BCS, Programmer, Graphic, Microsoft, Language, Skills];
 
 export const titles = [
     //Education
