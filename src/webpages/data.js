@@ -1,6 +1,7 @@
 import UTB from '/assets/UTBLogo.jpeg';
 import MD from '/assets/MDLogo.jpeg';
 import SMSH from '/assets/SMSHLogo.jpg';
+import DST from '/assets/DSTLogo.png'
 import SVH from '/assets/SVHLogo.jpeg';
 import OU from '/assets/OULogo.jpeg';
 import UG from '/assets/UGLogo.jpg';
@@ -12,7 +13,18 @@ import Language from '/assets/LanguageLogo.jpg';
 import Skills from '/assets/SkillsLogo.webp';
 
 
-export const images = [UTB, MD, SMSH, SVH, OU, UG, BCS, Programmer, Graphic, Microsoft, Language, Skills];
+export const images = [
+    //Education
+    UTB, MD, SMSH,
+
+    //Experience
+    DST, SVH, OU, UG,
+
+    //Achievement
+    BCS,
+
+    //Skills
+    Programmer, Graphic, Microsoft, Language, Skills];
 
 export const titles = [
     //Education
@@ -21,6 +33,7 @@ export const titles = [
     "SM Sultan Hassan Bangar", 
 
     //Experience
+    "Datastream Digital",
     "Stoneville Hotel", 
     "Osaka University", 
     "Utama Grand Superstore",
@@ -44,6 +57,7 @@ export const details1 = [
     "Student",
 
     //Experience
+    "Customer Support",
     "Waiter/Bartender",
     "Research Assistant",
     "Sales Assistant",
@@ -67,6 +81,7 @@ export const details2 = [
     "Bangar, Temburong",
 
     //Experience
+    "Brunei Darussalam",
     "Temburong, Brunei",
     "Osaka, Japan",
     "Gadong, Brunei",
@@ -90,6 +105,7 @@ export const details3 = [
     "2014 - 2017",
 
     //Experience
+    "February 2025 - Present",
     "October 2024 - December 2024",
     "May 2023 - July 2023",
     "Jan 2020 - June 2020",
@@ -114,6 +130,8 @@ export const descriptions = [
     "A secondary school that I attend in my hometown city, Temburong, and is the only secondary school there until now. I attended there for 4 years and was awarded 10 'O' Levels.",
 
     //Experience
+    "A position responsible in interacting with customers where our job is to update customers' data information. Here we manage customers' data with utmost care in order not to leak confidential informations of our customers. Other than that, we also update customers' information to ensure that they are consistent and always updated with our databases.",
+
     "A retail position in which we are mostly responsible for customer services within the hotel’s restaurant such as taking and delivering orders, tending the cashier and acting as a barista. Within the first two weeks of me working, I was already given the responsibility of helping manage an event hosted by the company’s boss, occupied by more than 70 important figures, along with a buffet during lunchtime which had been occupied by almost 150 people, in which both ended up in a success.",
 
     "Chosen as one of a select group of top students to attend the Osaka University International Certificate Program (OUICP) as a research assistant, with a primary focus on the United Nations’ Sustainable Development Goals (SDGs). There we were given the opportunity to propose a presentation idea on how to integrate halal science into one of their state-of-the-art technologies which they had recently developed.",
