@@ -130,7 +130,7 @@ export const descriptions = [
     "A secondary school that I attend in my hometown city, Temburong, and is the only secondary school there until now. I attended there for 4 years and was awarded 10 'O' Levels.",
 
     //Experience
-    "A position responsible in interacting with customers where our job is to update customers' data information. Here we manage customers' data with utmost care in order not to leak confidential informations of our customers. Other than that, we also update customers' information to ensure that they are consistent and always updated with our databases.",
+    "A position responsible in interacting with customers where our job is to update customers' data information. Here we manage customers' data with utmost care in order not to leak confidential informations of our customers. Other than that, we also update customers' information to ensure that they are consistent and always updated with our system's databases.",
 
     "A retail position in which we are mostly responsible for customer services within the hotel’s restaurant such as taking and delivering orders, tending the cashier and acting as a barista. Within the first two weeks of me working, I was already given the responsibility of helping manage an event hosted by the company’s boss, occupied by more than 70 important figures, along with a buffet during lunchtime which had been occupied by almost 150 people, in which both ended up in a success.",
 
