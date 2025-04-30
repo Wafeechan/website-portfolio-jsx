@@ -6,7 +6,7 @@ function Bottombar(){
                     <div className="cotainer mx-auto sm:my-6 my-3 justify-between text-center">
                         <h1>
                             You can find more about me here on{' '}
-                            <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+                            <a href="https://www.linkedin.com/in/abdul-wafi-norfadilah-7127a7321/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
                                 LinkedIn
                             </a>.
                         </h1>
