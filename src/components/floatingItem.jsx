@@ -6,21 +6,23 @@ const FloatingItem = ({
   animFrame1,
   animFrame2
 }) => {
-  const [xPos, setXPos] = useState(0);
+  const [xPos, setXPos] = useState(200);
+  const [yPos, setYPos] = useState(window.innerHeight - 200);
   const [direction, setDirection] = useState(1);
   const [isHovered, setIsHovered] = useState(false);
-  const [isPickedUp, setIsPickedUp] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
   const [animFrame, setAnimFrame] = useState(0);
 
+  const dragOffset = useRef({ x: 0, y: 0 });
   const animInterval = useRef(null);
 
-  // Movement animation
+  // FLOATING MOVEMENT (if not dragging)
   useEffect(() => {
-    if (isHovered || isPickedUp) return; // stop movement when hovered or picked
+    if (isHovered || isDragging) return;
 
     const interval = setInterval(() => {
       setXPos(prev => {
-        let next = prev + direction * 2;
+        let next = prev + direction * 1.5;
         if (next > window.innerWidth - 120) setDirection(-1);
         if (next < 0) setDirection(1);
         return next;
@@ -28,11 +30,11 @@ const FloatingItem = ({
     }, 16);
 
     return () => clearInterval(interval);
-  }, [direction, isHovered, isPickedUp]);
+  }, [direction, isHovered, isDragging]);
 
-  // Two-frame animation when picked up
+  // TWO-FRAME ANIMATION WHILE DRAGGING
   useEffect(() => {
-    if (!isPickedUp) {
+    if (!isDragging) {
       clearInterval(animInterval.current);
       return;
     }
@@ -42,22 +44,48 @@ const FloatingItem = ({
     }, 200);
 
     return () => clearInterval(animInterval.current);
-  }, [isPickedUp]);
+  }, [isDragging]);
 
-  const handleMouseDown = () => {
-    setIsPickedUp(true);
+  // START DRAG
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+
+    // Calculate offset so item doesn't "jump"
+    dragOffset.current = {
+      x: e.clientX - xPos,
+      y: e.clientY - yPos
+    };
   };
 
+  // DRAGGING: FOLLOW MOUSE
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+
+    setXPos(e.clientX - dragOffset.current.x);
+    setYPos(e.clientY - dragOffset.current.y);
+  };
+
+  // STOP DRAG
   const handleMouseUp = () => {
-    setIsPickedUp(false);
+    if (!isDragging) return;
+    setIsDragging(false);
     setAnimFrame(0);
-
-    // Drop it below somewhere
-    setXPos(Math.random() * (window.innerWidth - 120));
   };
 
+  // Attach global listeners so dragging works smoothly
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  });
+
+  // Decide what image to show
   let displayImage = idleImage;
-  if (isPickedUp) displayImage = animFrame === 0 ? animFrame1 : animFrame2;
+  if (isDragging) displayImage = animFrame === 0 ? animFrame1 : animFrame2;
   else if (isHovered) displayImage = hoverImage;
 
   return (
@@ -66,20 +94,19 @@ const FloatingItem = ({
       alt="floating-item"
       style={{
         position: "fixed",
-        bottom: isPickedUp ? "auto" : "100px",
-        top: isPickedUp ? "20px" : "auto",
         left: `${xPos}px`,
+        top: `${yPos}px`,
         width: "100px",
         height: "100px",
-        cursor: "pointer",
+        cursor: "grab",
         userSelect: "none",
-        transition: isPickedUp ? "none" : "transform 0.2s ease",
+        zIndex: 999,
         pointerEvents: "auto"
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
+      draggable={false} // Important to disable browser default drag
     />
   );
 };
