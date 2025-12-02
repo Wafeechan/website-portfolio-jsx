@@ -13,7 +13,7 @@
   }
   
   .nav-link:hover {
-    color: #60fff4;
+    color: #ffffff;
   }
   
   .nav-link::after {
@@ -23,7 +23,7 @@
     bottom: 1px;
     width: 0;
     height: 0.75px;
-    background-color: #60fff4; /* Same color as hover text */
+    background-color: #ffffff; /* Same color as hover text */
     transition: width 0.3s ease;
   }
   
