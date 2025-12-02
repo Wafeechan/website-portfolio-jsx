@@ -13,17 +13,17 @@
   }
   
   .nav-link:hover {
-    color: #3661be;
+    color: #60fff4;
   }
   
   .nav-link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: 1px;
     width: 0;
-    height: 2px;
-    background-color: #3661be; /* Same color as hover text */
+    height: 0.75px;
+    background-color: #60fff4; /* Same color as hover text */
     transition: width 0.3s ease;
   }
   

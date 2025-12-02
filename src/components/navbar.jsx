@@ -12,21 +12,22 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full text-gray-700 font-Inter">
+    <div className="w-full text-gray-300 font-Inter">
       <div className="m-0">
-        <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
-          <div className="w-full md:w-[95%] mx-auto flex items-center justify-between px-4 my-auto">
-            {/* Logo */}
+        <nav className="fixed top-0 left-0 z-50 w-full bg-gray-800">
+          <div className="w-full md:w-[95%] mx-auto flex items-center justify-between px-3 my-auto">
+            {/* Logo or navbar spacing */}
             <div className="flex items-center">
-              <img src={LogoMain} alt="Logo" className="h-16 md:h-24 w-full my-2" />
+              {/*<img src={LogoMain} alt="Logo" className="h-16 md:h-24 w-full my-2" />
               <div className="logo-text text-logoBlue">Wafee</div>
-              <div className="logo-text">chan</div>
+              <div className="logo-text">chan</div>*/}
+              <div className="h-10"></div>
             </div>
 
             {/* Burger Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden flex items-center text-gray-700 focus:outline-none"
+              className="md:hidden flex items-center text-white focus:outline-none"
             >
               <svg
                 className="h-8 w-8"
@@ -48,7 +49,7 @@ function Navbar() {
             <ul
               className={`${
                 isMenuOpen ? "block" : "hidden"
-              } md:flex md:space-x-12 text-2xl md:text-3xl absolute md:static top-20 left-0 bg-white w-full md:w-auto shadow-md md:shadow-none`}
+              } md:flex md:space-x-8 text-lg md:text-xl absolute md:static top-20 left-0 w-full md:w-auto shadow-md md:shadow-none`} //nav link spacing and stuffs
             >
               <li className="border-b md:border-none">
                 <Link

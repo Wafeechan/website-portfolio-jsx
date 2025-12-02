@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './webpages/Home.jsx';
+import Homev2 from './webpages/Homev2.jsx';
 import Portfolio from './webpages/Portfolio.jsx';
 import About from './webpages/About.jsx';
 import AboutInfo from './webpages/About-info.jsx';
@@ -18,7 +18,7 @@ function Main() {
     <Navbar />
     
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Homev2 />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
       <Route path="/about-info" element={<AboutInfo />} />
